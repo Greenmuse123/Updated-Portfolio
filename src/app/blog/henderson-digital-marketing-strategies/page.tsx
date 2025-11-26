@@ -2,6 +2,8 @@ import { ContactLink } from '@/components/blog/ContactLink';
 import { Metadata } from "next";
 import { BlogHeader, BlogSection, BlogSubsection, BlogParagraph, BlogList, BlogListItem, SchemaBlogPost } from '@/components/blog/BlogComponents';
 import BlogLayout from '@/components/blog/BlogLayout';
+import Link from 'next/link';
+import RelatedArticles from '@/components/blog/RelatedArticles';
 
 export const metadata: Metadata = {
   title: "Digital Marketing Strategies for Henderson Businesses | Elias Musleh",
@@ -221,6 +223,34 @@ export default function HendersonDigitalMarketingBlog() {
             Ready to elevate your Henderson business with digital marketing? <ContactLink>Contact me</ContactLink> for a consultation focused on practical, community-driven solutions.
           </BlogParagraph>
         </BlogSection>
+        <RelatedArticles 
+          articles={[
+            {
+              title: "AI Lead Generation Henderson",
+              url: "/blog/ai-lead-generation-henderson-nevada",
+              description: "Automate your Henderson marketing with AI. Generate 3-5x more qualified leads while cutting costs.",
+              category: "AI Marketing"
+            },
+            {
+              title: "Henderson Small Business Tech Solutions",
+              url: "/blog/henderson-small-business-tech-solutions",
+              description: "Complete tech stack guide for Henderson businesses. CRM, automation, and growth tools.",
+              category: "Tech Solutions"
+            },
+            {
+              title: "Henderson Website Development Costs",
+              url: "/blog/henderson-website-development-costs",
+              description: "What Henderson businesses should expect to pay for quality web development in 2025.",
+              category: "Web Development"
+            },
+            {
+              title: "E-Commerce Solutions Henderson Retailers",
+              url: "/blog/e-commerce-solutions-henderson-retailers",
+              description: "Online sales strategies for Henderson retail businesses. Build your e-commerce presence.",
+              category: "E-Commerce"
+            }
+          ]}
+        />
       </SchemaBlogPost>
     </BlogLayout>
   );

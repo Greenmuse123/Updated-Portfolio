@@ -1,4 +1,5 @@
 import { ContactLink } from '@/components/blog/ContactLink';
+import RelatedArticles from '@/components/blog/RelatedArticles';
 import { Metadata } from 'next';
 import { createBlogMetadata } from '@/utils/blog-metadata';
 import BlogLayout from '@/components/blog/BlogLayout';
@@ -200,7 +201,35 @@ export default function ArticleCostHiringWebDeveloperLasVegas() {
               As a <strong>freelance developer in Las Vegas</strong>, I provide transparent pricing and focus on delivering business value, not just code. <strong>Contact Elias Musleh</strong> for a free consultation and detailed quote for your specific project needs.
             </BlogParagraph>
           </BlogSection>
-        </SchemaBlogPost>
-      </BlogLayout>
-    );
+          <RelatedArticles 
+          articles={[
+            {
+              title: "Choosing a Web Developer Nevada",
+              url: "/blog/choosing-web-developer-nevada",
+              description: "How to hire the right web developer. Red flags to avoid and questions to ask.",
+              category: "Hiring Guide"
+            },
+            {
+              title: "Henderson Website Development Costs",
+              url: "/blog/henderson-website-development-costs",
+              description: "Henderson-specific web development pricing. Local market rates and expectations.",
+              category: "Local Pricing"
+            },
+            {
+              title: "Building Scalable Business Website",
+              url: "/blog/building-scalable-business-website-las-vegas",
+              description: "Get more value from your investment. Build websites that scale with your growth.",
+              category: "Strategy"
+            },
+            {
+              title: "AI Lead Generation Las Vegas",
+              url: "/blog/ai-lead-generation-las-vegas-businesses",
+              description: "After you build your website, use AI to generate leads automatically. 3-5x ROI.",
+              category: "Lead Generation"
+            }
+          ]}
+        />
+      </SchemaBlogPost>
+    </BlogLayout>
+  );
 }

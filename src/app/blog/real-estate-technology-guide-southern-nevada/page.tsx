@@ -9,6 +9,7 @@ import { SchemaBlogPost,
   BlogListItem,
   TableOfContents} from '@/components/blog/BlogComponents';
 import { ContactLink } from '@/components/blog/ContactLink';
+import RelatedArticles from '@/components/blog/RelatedArticles';
 
 export const metadata: Metadata = createBlogMetadata({
   title: "Real Estate Technology Guide Southern Nevada | PropTech Solutions",
@@ -241,6 +242,34 @@ export default function RealEstateTechGuide() {
             Ready to transform your Southern Nevada real estate business with custom technology solutions? <ContactLink>Contact me</ContactLink> for a consultation tailored to your specific needs.
           </BlogParagraph>
         </BlogSection>
+        <RelatedArticles 
+          articles={[
+            {
+              title: "AI Lead Generation Las Vegas",
+              url: "/blog/ai-lead-generation-las-vegas-businesses",
+              description: "Automate real estate lead generation. AI qualifies buyers and sellers 24/7.",
+              category: "AI Marketing"
+            },
+            {
+              title: "Digital Transformation Tips Summerlin Real Estate",
+              url: "/blog/digital-transformation-tips-summerlin-real-estate-teams",
+              description: "How Summerlin real estate teams use technology to dominate luxury markets.",
+              category: "Real Estate Tech"
+            },
+            {
+              title: "Smart Tech Real Estate Agents Henderson",
+              url: "/blog/smart-tech-real-estate-agents-henderson-green-valley",
+              description: "Tech stack for Henderson/Green Valley agents. CRM, automation, and lead tools.",
+              category: "Local Real Estate"
+            },
+            {
+              title: "AI Chatbot Lead Generation",
+              url: "/blog/ai-chatbot-lead-generation-las-vegas",
+              description: "Qualify property buyers instantly with AI chatbots. 24/7 lead capture.",
+              category: "AI Automation"
+            }
+          ]}
+        />
       </SchemaBlogPost>
     </BlogLayout>
   );

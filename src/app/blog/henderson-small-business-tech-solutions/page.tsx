@@ -1,6 +1,8 @@
 import { ContactLink } from '@/components/blog/ContactLink';
 import { Metadata } from "next";
 import { BlogHeader, BlogSection, BlogSubsection, BlogParagraph, BlogList, BlogListItem, SchemaBlogPost } from '@/components/blog/BlogComponents';
+import Link from 'next/link';
+import RelatedArticles from '@/components/blog/RelatedArticles';
 
 export const metadata: Metadata = {
   title: "Essential Tech Solutions for Henderson Small Businesses in 2025 | Elias Musleh",
@@ -162,6 +164,34 @@ export default function HendersonSmallBusinessTechBlog() {
             Ready to discuss how technology can help your Henderson business? <ContactLink>Contact me</ContactLink> for a consultation focused on practical, results-driven solutions.
           </BlogParagraph>
         </BlogSection>
+        <RelatedArticles 
+          articles={[
+            {
+              title: "AI Lead Generation Henderson",
+              url: "/blog/ai-lead-generation-henderson-nevada",
+              description: "Stop chasing leads manually. AI automation captures and qualifies Henderson customers 24/7.",
+              category: "AI Automation"
+            },
+            {
+              title: "Henderson Digital Marketing Strategies",
+              url: "/blog/henderson-digital-marketing-strategies",
+              description: "Proven digital marketing tactics for Henderson businesses to dominate local search.",
+              category: "Marketing"
+            },
+            {
+              title: "Common Tech Problems Henderson Businesses",
+              url: "/blog/common-tech-problems-henderson-businesses",
+              description: "Avoid costly tech mistakes. Solutions to the most common Henderson business tech challenges.",
+              category: "Tech Solutions"
+            },
+            {
+              title: "Henderson Business Cybersecurity",
+              url: "/blog/henderson-business-cybersecurity-best-practices",
+              description: "Protect your Henderson business from cyber threats. Essential security best practices.",
+              category: "Security"
+            }
+          ]}
+        />
       </SchemaBlogPost>
     </BlogLayout>
   );

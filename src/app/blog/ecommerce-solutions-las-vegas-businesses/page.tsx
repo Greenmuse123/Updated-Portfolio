@@ -1,4 +1,5 @@
 import { ContactLink } from '@/components/blog/ContactLink';
+import RelatedArticles from '@/components/blog/RelatedArticles';
 import { Metadata } from 'next';
 import { SchemaBlogPost, BlogHeader, TableOfContents, BlogSection, BlogSubsection, BlogParagraph, BlogList, BlogListItem} from '@/components/blog/BlogComponents';
 
@@ -256,6 +257,34 @@ export default function EcommerceSolutions() {
           </div>
         </div>
       </div>
+      <RelatedArticles 
+        articles={[
+          {
+            title: "E-Commerce Solutions Henderson Retailers",
+            url: "/blog/e-commerce-solutions-henderson-retailers",
+            description: "Henderson-specific ecommerce strategies for local retailers going online.",
+            category: "Local E-Commerce"
+          },
+          {
+            title: "AI Lead Generation Las Vegas",
+            url: "/blog/ai-lead-generation-las-vegas-businesses",
+            description: "Drive traffic to your online store with AI-powered lead generation and marketing.",
+            category: "AI Marketing"
+          },
+          {
+            title: "Las Vegas E-Commerce Local Business Solutions",
+            url: "/blog/las-vegas-ecommerce-local-business-solutions",
+            description: "Local Vegas businesses winning with ecommerce. Strategies and case studies.",
+            category: "Case Studies"
+          },
+          {
+            title: "Building Scalable Business Website",
+            url: "/blog/building-scalable-business-website-las-vegas",
+            description: "Build ecommerce platforms that scale from 10 to 10,000 orders per day.",
+            category: "Scalability"
+          }
+        ]}
+      />
     </div>
   );
 }

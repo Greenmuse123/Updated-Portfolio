@@ -1,6 +1,7 @@
 import BlogLayout from '@/components/blog/BlogLayout';
 import { BlogHeader, TableOfContents, BlogSection, BlogSubsection, BlogParagraph, BlogList, BlogListItem, SchemaBlogPost } from '@/components/blog/BlogComponents';
 import { ContactLink } from '@/components/blog/ContactLink';
+import RelatedArticles from '@/components/blog/RelatedArticles';
 import { createBlogMetadata } from '@/utils/blog-metadata';
 
 export const metadata = {
@@ -173,6 +174,34 @@ export default function SummerlinMedicalPracticesWebsiteGuide() {
           Ready to enhance your online presence? <ContactLink>Contact GreenMuse</ContactLink> for expert assistance.
         </BlogParagraph>
       </BlogSection>
+        <RelatedArticles 
+          articles={[
+            {
+              title: "AI Lead Generation Summerlin",
+              url: "/blog/ai-lead-generation-summerlin-businesses",
+              description: "Automate patient acquisition with AI. Capture and qualify Summerlin medical leads 24/7.",
+              category: "AI Marketing"
+            },
+            {
+              title: "Healthcare Technology Solutions Nevada",
+              url: "/blog/healthcare-providers-technology-solutions-nevada",
+              description: "Complete tech stack for Nevada medical practices. HIPAA-compliant systems and patient portals.",
+              category: "Healthcare Tech"
+            },
+            {
+              title: "AI Chatbot Lead Generation",
+              url: "/blog/ai-chatbot-lead-generation-las-vegas",
+              description: "Answer patient questions and book appointments automatically with AI chatbots.",
+              category: "AI Automation"
+            },
+            {
+              title: "Building Scalable Business Website",
+              url: "/blog/building-scalable-business-website-las-vegas",
+              description: "Build medical practice websites that grow with your patient base.",
+              category: "Web Development"
+            }
+          ]}
+        />
       </SchemaBlogPost>
     </BlogLayout>
   );

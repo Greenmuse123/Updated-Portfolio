@@ -61,6 +61,8 @@ export const metadata = {
 };
 
 import BlogLayout from '@/components/blog/BlogLayout';
+import Link from 'next/link';
+import RelatedArticles from '@/components/blog/RelatedArticles';
 import { ContactLink } from '@/components/blog/ContactLink';
 import { CTAButton } from '@/components/blog/CTAButton';
 import { BlogHeader, BlogSection, BlogSubsection, BlogParagraph, BlogList, BlogListItem, SchemaBlogPost } from '@/components/blog/BlogComponents';
@@ -128,6 +130,34 @@ export default function ArticleWhyLocalSEOMattersVegas() {
             Want to rank #1 for “SEO Las Vegas” or “best [your service] in Henderson or Summerlin?” <strong>Contact Elias Musleh</strong> for a local SEO audit or a full strategy tailored to your business. Let’s put your Vegas business on the map—literally!
           </BlogParagraph>
         </BlogSection>
+        <RelatedArticles 
+          articles={[
+            {
+              title: "Henderson Digital Marketing Strategies",
+              url: "/blog/henderson-digital-marketing-strategies",
+              description: "Local SEO tactics specifically for Henderson businesses. Dominate Green Valley search.",
+              category: "Local SEO"
+            },
+            {
+              title: "AI Lead Generation Las Vegas",
+              url: "/blog/ai-lead-generation-las-vegas-businesses",
+              description: "Combine local SEO with AI automation. Capture and convert local leads automatically.",
+              category: "AI Marketing"
+            },
+            {
+              title: "Google Ranking Signals Vegas Businesses 2025",
+              url: "/blog/google-ranking-signals-local-vegas-businesses-2025",
+              description: "Latest Google updates and ranking factors for Vegas businesses.",
+              category: "SEO Updates"
+            },
+            {
+              title: "Local SEO Checklist Las Vegas Restaurants",
+              url: "/blog/local-seo-checklist-las-vegas-restaurants",
+              description: "Step-by-step local SEO checklist for Vegas restaurants and food businesses.",
+              category: "Industry-Specific SEO"
+            }
+          ]}
+        />
       </SchemaBlogPost>
     </BlogLayout>
   );

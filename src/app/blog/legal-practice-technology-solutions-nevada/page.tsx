@@ -1,4 +1,5 @@
 import { ContactLink } from '@/components/blog/ContactLink';
+import RelatedArticles from '@/components/blog/RelatedArticles';
 import { Metadata } from 'next';
 import { SchemaBlogPost, BlogHeader, TableOfContents, BlogSection, BlogSubsection, BlogParagraph, BlogList, BlogListItem} from '@/components/blog/BlogComponents';
 

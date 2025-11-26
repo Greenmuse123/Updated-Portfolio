@@ -3,12 +3,16 @@ import { createBlogMetadata } from '@/utils/blog-metadata';
 import BlogLayout from "@/components/blog/BlogLayout";
 import { BlogHeader,
   BlogSection,
-  BlogSubsection, BlogParagraph,
+  BlogSubsection, 
+  BlogParagraph,
   BlogList,
   BlogListItem,
   SchemaBlogPost,
-  TableOfContents} from '@/components/blog/BlogComponents';
+  TableOfContents
+} from '@/components/blog/BlogComponents';
 import { ContactLink } from "@/components/blog/ContactLink";
+import Link from 'next/link';
+import RelatedArticles from '@/components/blog/RelatedArticles';
 
 export const metadata: Metadata = createBlogMetadata({
   title: "Henderson Website Development Costs: 2025 Pricing Guide",
@@ -277,6 +281,34 @@ export default function HendersonWebsiteCostsBlog() {
             </ContactLink>
           </div>
         </BlogSection>
+        <RelatedArticles 
+          articles={[
+            {
+              title: "Choosing a Web Developer Nevada",
+              url: "/blog/choosing-web-developer-nevada",
+              description: "How to hire the right web developer for your Nevada business. Red flags to avoid.",
+              category: "Hiring Guide"
+            },
+            {
+              title: "Cost of Hiring Web Developer Las Vegas",
+              url: "/blog/cost-hiring-web-developer-las-vegas",
+              description: "Vegas Valley web development pricing guide. What to expect and how to budget.",
+              category: "Pricing"
+            },
+            {
+              title: "Building Scalable Business Website",
+              url: "/blog/building-scalable-business-website-las-vegas",
+              description: "Build websites that grow with your business. Scalability strategies for Vegas companies.",
+              category: "Web Development"
+            },
+            {
+              title: "Henderson Small Business Tech Solutions",
+              url: "/blog/henderson-small-business-tech-solutions",
+              description: "Complete tech stack for Henderson businesses beyond just websites.",
+              category: "Tech Solutions"
+            }
+          ]}
+        />
       </SchemaBlogPost>
     </BlogLayout>
   );

@@ -7,8 +7,10 @@ import { BlogHeader,
   BlogList, 
   BlogListItem,
   SchemaBlogPost,
-  TableOfContents} from '@/components/blog/BlogComponents';
+  TableOfContents } from '@/components/blog/BlogComponents';
 import { ContactLink } from "@/components/blog/ContactLink";
+import Link from 'next/link';
+import RelatedArticles from '@/components/blog/RelatedArticles';
 
 export const metadata: Metadata = createBlogMetadata({
   title: "Best Tech Solutions for Local Restaurants and Bars in Henderson",
@@ -295,6 +297,34 @@ export default function ArticleBestTechSolutionsRestaurantsBarsHenderson() {
             </BlogParagraph>
           </BlogSubsection>
         </BlogSection>
+        <RelatedArticles 
+          articles={[
+            {
+              title: "AI Chatbots for Restaurants Las Vegas",
+              url: "/blog/ai-chatbots-restaurants-salons-auto-shops-las-vegas",
+              description: "24/7 reservation handling and customer service automation for Vegas restaurants.",
+              category: "AI Automation"
+            },
+            {
+              title: "Restaurant & Hospitality Tech Guide Nevada",
+              url: "/blog/restaurant-hospitality-tech-guide-nevada",
+              description: "Complete tech solutions for Nevada F&B businesses. POS, reservations, and more.",
+              category: "Industry Guide"
+            },
+            {
+              title: "Digital Ordering POS Tech Food Trucks Paradise",
+              url: "/blog/digital-ordering-pos-tech-food-trucks-paradise-nv",
+              description: "Mobile POS and ordering systems for food trucks and mobile vendors.",
+              category: "POS Systems"
+            },
+            {
+              title: "Henderson Digital Marketing Strategies",
+              url: "/blog/henderson-digital-marketing-strategies",
+              description: "Market your Henderson restaurant effectively. Local SEO and social media strategies.",
+              category: "Marketing"
+            }
+          ]}
+        />
       </SchemaBlogPost>
     </BlogLayout>
   );
