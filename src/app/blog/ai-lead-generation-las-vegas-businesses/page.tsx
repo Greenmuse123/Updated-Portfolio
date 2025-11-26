@@ -47,8 +47,8 @@ export default function AILeadGenerationLasVegas() {
           <p className="text-gray-700 dark:text-gray-300 mb-4">
             I'm helping Las Vegas businesses generate 3-5x more qualified leads with AI automation. If you're tired of expensive ads and cold outreach that doesn't convert, let's talk.
           </p>
-          <Link href="tel:+17027161234" className="inline-block bg-emerald-600 hover:bg-emerald-700 text-white py-3 px-8 rounded-lg font-bold text-lg transition-colors duration-200">
-            📞 Call Now: (702) 716-1234
+          <Link href="tel:+17027738839" className="inline-block bg-emerald-600 hover:bg-emerald-700 text-white py-3 px-8 rounded-lg font-bold text-lg transition-colors duration-200">
+            📞 Call Now: (702) 773-8839
           </Link>
         </div>
 
@@ -325,8 +325,8 @@ export default function AILeadGenerationLasVegas() {
               Let's hop on a 30-minute call. I'll review your current lead generation, show you exactly how AI can help, and give you a custom roadmap—even if you don't hire me.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="tel:+17027161234" className="inline-block bg-white text-emerald-600 py-3 px-8 rounded-lg font-bold text-lg transition-all duration-200 hover:bg-emerald-50 text-center">
-                📞 Call: (702) 716-1234
+              <Link href="tel:+17027738839" className="inline-block bg-white text-emerald-600 py-3 px-8 rounded-lg font-bold text-lg transition-all duration-200 hover:bg-emerald-50 text-center">
+                📞 Call: (702) 773-8839
               </Link>
               <Link href="mailto:elias@eliasmusleh.com" className="inline-block bg-white text-emerald-600 py-3 px-8 rounded-lg font-bold text-lg transition-all duration-200 hover:bg-emerald-50 text-center">
                 ✉️ Email Me

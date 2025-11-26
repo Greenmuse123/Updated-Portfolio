@@ -37,8 +37,8 @@ export default function AILeadGenerationHenderson() {
           <p className="text-gray-700 dark:text-gray-300 mb-4">
             Stop losing leads to Vegas competitors. I'll show you how AI can generate 3-5x more qualified Henderson customers automatically. Free consultation—call now.
           </p>
-          <Link href="tel:+17027161234" className="inline-block bg-emerald-600 hover:bg-emerald-700 text-white py-3 px-8 rounded-lg font-bold text-lg transition-colors duration-200">
-            📞 Call (702) 716-1234
+          <Link href="tel:+17027738839" className="inline-block bg-emerald-600 hover:bg-emerald-700 text-white py-3 px-8 rounded-lg font-bold text-lg transition-colors duration-200">
+            📞 Call (702) 773-8839
           </Link>
         </div>
 
@@ -198,8 +198,8 @@ export default function AILeadGenerationHenderson() {
               30-minute call. I'll audit your current lead generation, show you exactly how AI can help YOUR Henderson business, and give you a custom roadmap. No obligation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="tel:+17027161234" className="inline-block bg-white text-emerald-600 py-3 px-8 rounded-lg font-bold text-lg transition-all duration-200 hover:bg-emerald-50 text-center">
-                📞 Call: (702) 716-1234
+              <Link href="tel:+17027738839" className="inline-block bg-white text-emerald-600 py-3 px-8 rounded-lg font-bold text-lg transition-all duration-200 hover:bg-emerald-50 text-center">
+                📞 Call: (702) 773-8839
               </Link>
               <Link href="mailto:elias@eliasmusleh.com" className="inline-block bg-white text-emerald-600 py-3 px-8 rounded-lg font-bold text-lg transition-all duration-200 hover:bg-emerald-50 text-center">
                 ✉️ Email Me
@@ -214,7 +214,7 @@ export default function AILeadGenerationHenderson() {
             <strong>Don't let Vegas competitors steal your Henderson customers.</strong> While you're manually following up leads, AI-powered businesses are capturing 3-5x more qualified Henderson customers automatically.
           </BlogParagraph>
           <BlogParagraph>
-            <strong>Call me today: (702) 716-1234</strong> - Let's build your Henderson lead generation machine.
+            <strong>Call me today: (702) 773-8839</strong> - Let's build your Henderson lead generation machine.
           </BlogParagraph>
         </BlogSection>
       </SchemaBlogPost>
