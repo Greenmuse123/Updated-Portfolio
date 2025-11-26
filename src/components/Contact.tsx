@@ -101,7 +101,7 @@ const Contact = ({ locationSpecific }: ContactProps = {}) => {
                     Phone
                   </p>
                   <a
-                    href="tel:+17025991404"
+                    href="tel:+17027738839"
                     onClick={() => {
                       if (typeof window !== 'undefined' && typeof window.gtag_report_phone_conversion === 'function') {
                         window.gtag_report_phone_conversion();
@@ -111,7 +111,7 @@ const Contact = ({ locationSpecific }: ContactProps = {}) => {
                       theme === 'dark' ? 'text-emerald-400' : 'text-emerald-600'
                     }`}
                   >
-                    (702) 599-1404
+                    (702) 773-8839
                   </a>
                 </div>
               </div>
