@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://eliasmusleh.com
+
+# Sitemaps
+Sitemap: https://eliasmusleh.com/sitemap.xml

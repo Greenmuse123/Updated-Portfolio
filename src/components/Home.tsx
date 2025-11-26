@@ -54,7 +54,7 @@ const Home = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.8 }}
             >
-              Hi, I'm{' '}
+              Hi, I&apos;m{' '}
               <span className="text-emerald-500">Elias Musleh</span>
             </motion.h1>
             
@@ -78,7 +78,7 @@ const Home = () => {
               transition={{ delay: 0.6, duration: 0.8 }}
             >
               Crafting elegant solutions through code and creativity.
-              Let's build something amazing together.
+              Let&apos;s build something amazing together.
             </motion.p>
 
             <motion.div
@@ -97,16 +97,22 @@ const Home = () => {
               >
                 View My Work
               </Link>
-              <Link
-                href="#contact"
+              <button
+                type="button"
+                onClick={() => {
+                  if (typeof window !== 'undefined') {
+                    const event = new CustomEvent('openContactModal');
+                    window.dispatchEvent(event);
+                  }
+                }}
                 className={`px-8 py-3 rounded-lg font-semibold transition-all duration-300 ${
                   theme === 'dark'
                     ? 'border border-emerald-500 text-emerald-500 hover:bg-emerald-500/10'
                     : 'border border-emerald-500 text-emerald-500 hover:bg-emerald-500/10'
                 }`}
               >
-                Get in Touch
-              </Link>
+                Let's Build Something
+              </button>
             </motion.div>
           </motion.div>
 
