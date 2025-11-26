@@ -12,19 +12,39 @@ module.exports = {
   transform: async (config, path) => {
     // Custom priority rules
     let priority = 0.7;
-    if (path === '/') priority = 1.0;
-    else if (path === '/services') priority = 0.9;
-    else if (path.includes('-developer')) priority = 0.8;
-    else if (path.includes('ai-automation')) priority = 0.8;
-    else if (path.includes('saas-consulting')) priority = 0.8;
-    else if (path.startsWith('/blog/')) priority = 0.6;
+    let changefreq = 'monthly';
+    
+    if (path === '/') {
+      priority = 1.0;
+      changefreq = 'weekly';
+    }
+    else if (path === '/services') {
+      priority = 0.9;
+      changefreq = 'weekly';
+    }
+    else if (path.includes('-developer')) {
+      priority = 0.8;
+      changefreq = 'monthly';
+    }
+    else if (path.includes('ai-automation')) {
+      priority = 0.8;
+      changefreq = 'weekly';
+    }
+    else if (path.includes('saas-consulting')) {
+      priority = 0.8;
+      changefreq = 'weekly';
+    }
+    else if (path.startsWith('/blog/')) {
+      priority = 0.75;  // INCREASED FROM 0.6
+      changefreq = 'weekly';  // CHANGED FROM monthly
+    }
 
     // Current date for lastmod
     const lastmod = new Date().toISOString();
 
     return {
       loc: path,
-      changefreq: path === '/' || path === '/services' ? 'weekly' : 'monthly',
+      changefreq: changefreq,
       priority: priority,
       lastmod: lastmod,
       alternateRefs: config.alternateRefs ?? [],
