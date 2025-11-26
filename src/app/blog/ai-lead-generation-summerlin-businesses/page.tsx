@@ -4,6 +4,7 @@ import BlogLayout from '@/components/blog/BlogLayout';
 import { SchemaBlogPost, BlogHeader, BlogSection, BlogParagraph, BlogList, BlogListItem } from '@/components/blog/BlogComponents';
 import { ContactLink } from '@/components/blog/ContactLink';
 import Link from 'next/link';
+import RelatedArticles from '@/components/blog/RelatedArticles';
 
 export const metadata = createBlogMetadata({
   title: 'AI Lead Generation for Summerlin: Premium Services, Premium Results',
@@ -193,6 +194,35 @@ export default function AILeadGenerationSummerlin() {
             <ContactLink>Contact me today</ContactLink> or call <strong>(702) 773-8839</strong> - Let's build your premium lead generation system.
           </BlogParagraph>
         </BlogSection>
+
+        <RelatedArticles 
+          articles={[
+            {
+              title: "AI Lead Generation Green Valley Ranch",
+              url: "/blog/ai-lead-generation-green-valley-ranch",
+              description: "Another premium Vegas market where AI helps attract affluent homeowners who value quality over price.",
+              category: "Luxury Market"
+            },
+            {
+              title: "AI Lead Generation Spring Valley",
+              url: "/blog/ai-lead-generation-spring-valley-businesses",
+              description: "Spring Valley's diverse market needs customized AI targeting. See multicultural lead gen strategies that work.",
+              category: "Local Market"
+            },
+            {
+              title: "AI Email Marketing Automation",
+              url: "/blog/ai-email-marketing-automation-las-vegas",
+              description: "Premium brands need sophisticated nurture sequences. Learn AI email automation for luxury services.",
+              category: "Marketing Strategy"
+            },
+            {
+              title: "AI Lead Generation for Henderson",
+              url: "/blog/ai-lead-generation-henderson-nevada",
+              description: "Henderson's affluent neighborhoods (Anthem, Green Valley) use similar AI strategies as Summerlin.",
+              category: "Premium Market"
+            }
+          ]}
+        />
       </SchemaBlogPost>
     </BlogLayout>
   );

@@ -4,6 +4,7 @@ import BlogLayout from '@/components/blog/BlogLayout';
 import { SchemaBlogPost, BlogHeader, BlogSection, BlogParagraph, BlogList, BlogListItem } from '@/components/blog/BlogComponents';
 import { ContactLink } from '@/components/blog/ContactLink';
 import Link from 'next/link';
+import RelatedArticles from '@/components/blog/RelatedArticles';
 
 export const metadata = createBlogMetadata({
   title: 'AI Lead Generation for Henderson Businesses: Dominate the Local Market',
@@ -217,6 +218,35 @@ export default function AILeadGenerationHenderson() {
             <strong>Call me today: (702) 773-8839</strong> - Let's build your Henderson lead generation machine.
           </BlogParagraph>
         </BlogSection>
+
+        <RelatedArticles 
+          articles={[
+            {
+              title: "AI Lead Generation Green Valley Ranch",
+              url: "/blog/ai-lead-generation-green-valley-ranch",
+              description: "GVR's premium residential market needs white-glove service. See how AI positions you as THE luxury provider.",
+              category: "Premium Market"
+            },
+            {
+              title: "AI Lead Generation for Las Vegas (Main Guide)",
+              url: "/blog/ai-lead-generation-las-vegas-businesses",
+              description: "Complete guide to AI lead generation across the Vegas Valley. Perfect starting point for any business.",
+              category: "Complete Guide"
+            },
+            {
+              title: "AI Chatbot Lead Generation",
+              url: "/blog/ai-chatbot-lead-generation-las-vegas",
+              description: "How chatbots capture Henderson leads 24/7, qualify by neighborhood, and book consultations automatically.",
+              category: "Technical Deep-Dive"
+            },
+            {
+              title: "AI Lead Generation North Las Vegas",
+              url: "/blog/ai-lead-generation-north-las-vegas",
+              description: "NLV's growth market offers huge opportunity. Learn AI strategies for capturing expansion-focused businesses.",
+              category: "Growth Market"
+            }
+          ]}
+        />
       </SchemaBlogPost>
     </BlogLayout>
   );

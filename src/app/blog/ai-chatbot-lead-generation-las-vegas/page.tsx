@@ -3,6 +3,7 @@ import { createBlogMetadata } from '@/utils/blog-metadata';
 import BlogLayout from '@/components/blog/BlogLayout';
 import { SchemaBlogPost, BlogHeader, BlogSection, BlogParagraph, BlogList, BlogListItem } from '@/components/blog/BlogComponents';
 import Link from 'next/link';
+import RelatedArticles from '@/components/blog/RelatedArticles';
 
 export const metadata = createBlogMetadata({
   title: 'AI Chatbot Lead Generation Las Vegas: Capture Leads While You Sleep',
@@ -120,6 +121,34 @@ export default function AIChatbotLeadGenerationLasVegas() {
           <BlogParagraph><strong>Investment:</strong> $2,500-$6,000 for setup + $200-$500/month. Typical ROI: 5-15x in first year.</BlogParagraph>
           <BlogParagraph><strong>Call (702) 773-8839</strong> - Stop losing leads to competitors who respond faster!</BlogParagraph>
         </BlogSection>
+        <RelatedArticles 
+          articles={[
+            {
+              title: "AI Email Marketing Automation",
+              url: "/blog/ai-email-marketing-automation-las-vegas",
+              description: "Pair chatbots with AI email sequences for complete lead nurturing automation.",
+              category: "Marketing Automation"
+            },
+            {
+              title: "AI Lead Generation Las Vegas (Main Guide)",
+              url: "/blog/ai-lead-generation-las-vegas-businesses",
+              description: "Start here for complete overview of AI lead generation strategies across all Vegas markets.",
+              category: "Complete Guide"
+            },
+            {
+              title: "AI Lead Generation Summerlin",
+              url: "/blog/ai-lead-generation-summerlin-businesses",
+              description: "See how Summerlin luxury businesses use AI chatbots to qualify premium clients.",
+              category: "Luxury Market"
+            },
+            {
+              title: "AI Lead Generation Henderson",
+              url: "/blog/ai-lead-generation-henderson-nevada",
+              description: "Henderson-specific chatbot strategies for local service businesses and retailers.",
+              category: "Local Market"
+            }
+          ]}
+        />
       </SchemaBlogPost>
     </BlogLayout>
   );

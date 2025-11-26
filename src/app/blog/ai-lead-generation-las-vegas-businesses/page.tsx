@@ -5,6 +5,7 @@ import { SchemaBlogPost, BlogHeader, BlogSection, BlogSubsection, BlogParagraph,
 import { ContactLink } from '@/components/blog/ContactLink';
 import { CTAButton } from '@/components/blog/CTAButton';
 import Link from 'next/link';
+import RelatedArticles from '@/components/blog/RelatedArticles';
 
 export const metadata = createBlogMetadata({
   title: 'AI Lead Generation for Las Vegas Businesses: Automate Your Sales Pipeline',
@@ -344,6 +345,35 @@ export default function AILeadGenerationLasVegas() {
             The Vegas market is too competitive to ignore AI any longer. <strong>Call me today and let's build your automated lead generation machine.</strong>
           </BlogParagraph>
         </BlogSection>
+
+        <RelatedArticles 
+          articles={[
+            {
+              title: "AI Lead Generation for Henderson Businesses",
+              url: "/blog/ai-lead-generation-henderson-nevada",
+              description: "Henderson's premium market demands smart lead generation. See how AI helps local businesses qualify affluent clients automatically.",
+              category: "Local Market"
+            },
+            {
+              title: "AI Lead Generation for Summerlin",
+              url: "/blog/ai-lead-generation-summerlin-businesses",
+              description: "Summerlin's luxury market requires premium positioning. Discover AI strategies that attract high-value homeowners.",
+              category: "Luxury Market"
+            },
+            {
+              title: "AI Chatbot Lead Generation Las Vegas",
+              url: "/blog/ai-chatbot-lead-generation-las-vegas",
+              description: "Deep dive into AI chatbots: how they capture leads 24/7, qualify prospects, and book appointments automatically.",
+              category: "Technical Guide"
+            },
+            {
+              title: "AI Email Marketing Automation",
+              url: "/blog/ai-email-marketing-automation-las-vegas",
+              description: "Turn cold leads into hot buyers with AI-powered email sequences that nurture prospects on autopilot.",
+              category: "Marketing Automation"
+            }
+          ]}
+        />
       </SchemaBlogPost>
     </BlogLayout>
   );

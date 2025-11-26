@@ -3,6 +3,7 @@ import { createBlogMetadata } from '@/utils/blog-metadata';
 import BlogLayout from '@/components/blog/BlogLayout';
 import { SchemaBlogPost, BlogHeader, BlogSection, BlogParagraph, BlogList, BlogListItem } from '@/components/blog/BlogComponents';
 import Link from 'next/link';
+import RelatedArticles from '@/components/blog/RelatedArticles';
 
 export const metadata = createBlogMetadata({
   title: 'AI Lead Generation for North Las Vegas: Capture the Growing Market',
@@ -149,6 +150,34 @@ export default function AILeadGenerationNorthLasVegas() {
           </div>
           <BlogParagraph><strong>Call (702) 773-8839</strong> - Don't let competitors capture YOUR North Las Vegas customers!</BlogParagraph>
         </BlogSection>
+        <RelatedArticles 
+          articles={[
+            {
+              title: "AI Lead Generation Enterprise Nevada",
+              url: "/blog/ai-lead-generation-enterprise-nevada",
+              description: "Enterprise district B2B strategies that work for NLV professional services and industrial businesses.",
+              category: "B2B Market"
+            },
+            {
+              title: "AI Lead Generation Las Vegas (Main Guide)",
+              url: "/blog/ai-lead-generation-las-vegas-businesses",
+              description: "Complete AI lead generation guide for the entire Vegas Valley. Essential reading for any business.",
+              category: "Complete Guide"
+            },
+            {
+              title: "AI Chatbot Lead Generation",
+              url: "/blog/ai-chatbot-lead-generation-las-vegas",
+              description: "Technical deep-dive: How AI chatbots qualify leads, answer questions, and book appointments 24/7.",
+              category: "Technical Guide"
+            },
+            {
+              title: "AI Lead Generation Paradise/Strip",
+              url: "/blog/ai-lead-generation-paradise-strip-businesses",
+              description: "Hospitality and tourism AI strategies that capture high-volume leads near the Strip.",
+              category: "Tourism Market"
+            }
+          ]}
+        />
       </SchemaBlogPost>
     </BlogLayout>
   );

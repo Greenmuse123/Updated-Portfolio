@@ -3,6 +3,7 @@ import { createBlogMetadata } from '@/utils/blog-metadata';
 import BlogLayout from '@/components/blog/BlogLayout';
 import { SchemaBlogPost, BlogHeader, BlogSection, BlogParagraph, BlogList, BlogListItem } from '@/components/blog/BlogComponents';
 import Link from 'next/link';
+import RelatedArticles from '@/components/blog/RelatedArticles';
 
 export const metadata = createBlogMetadata({
   title: 'AI Lead Generation Green Valley Ranch: Premium Residential Services',
@@ -134,6 +135,34 @@ export default function AILeadGenerationGreenValleyRanch() {
           </div>
           <BlogParagraph><strong>Call (702) 773-8839</strong> - Stop losing $50K-$150K GVR projects to competitors who respond faster. Let AI capture every premium opportunity!</BlogParagraph>
         </BlogSection>
+        <RelatedArticles 
+          articles={[
+            {
+              title: "AI Lead Generation Summerlin",
+              url: "/blog/ai-lead-generation-summerlin-businesses",
+              description: "Summerlin and GVR share similar affluent demographics. Both need premium AI positioning strategies.",
+              category: "Luxury Market"
+            },
+            {
+              title: "AI Lead Generation Henderson",
+              url: "/blog/ai-lead-generation-henderson-nevada",
+              description: "GVR is part of Henderson—see broader Henderson AI strategies for Anthem, Green Valley, and more.",
+              category: "Local Market"
+            },
+            {
+              title: "AI Email Marketing Automation",
+              url: "/blog/ai-email-marketing-automation-las-vegas",
+              description: "Luxury clients need sophisticated nurture sequences. Learn premium email automation strategies.",
+              category: "Marketing Strategy"
+            },
+            {
+              title: "AI Lead Generation Las Vegas (Main Guide)",
+              url: "/blog/ai-lead-generation-las-vegas-businesses",
+              description: "Start with the complete guide to AI lead generation across all Vegas Valley markets.",
+              category: "Complete Guide"
+            }
+          ]}
+        />
       </SchemaBlogPost>
     </BlogLayout>
   );

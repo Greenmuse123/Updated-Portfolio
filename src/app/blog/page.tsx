@@ -67,6 +67,112 @@ export default async function BlogHome() {
             Elias Musleh Blog & Insights
           </h1>
         <p className="mb-14 text-2xl text-gray-700 dark:text-gray-300 font-medium max-w-3xl">Industry insights, web development tips, game development resources, and tech strategies for startups and businesses in Las Vegas, Henderson, and throughout Nevada.</p>
+        
+        {/* FEATURED: AI Lead Generation Series - NEW 2025 */}
+        <div className="mb-16 p-8 bg-gradient-to-br from-emerald-100 to-teal-100 dark:from-emerald-900/40 dark:to-teal-900/40 rounded-2xl border-2 border-emerald-300 dark:border-emerald-700 shadow-xl">
+          <div className="flex items-center gap-3 mb-4">
+            <span className="text-4xl">🤖</span>
+            <h2 className="text-3xl font-extrabold text-emerald-800 dark:text-emerald-300">AI Lead Generation Series</h2>
+            <span className="ml-auto px-4 py-1 bg-red-500 text-white text-sm font-bold rounded-full animate-pulse">NEW 2025</span>
+          </div>
+          <p className="text-lg text-gray-700 dark:text-gray-300 mb-6 max-w-4xl">
+            <strong>Transform your business with AI automation.</strong> Our comprehensive 10-part series shows exactly how Las Vegas Valley businesses are using AI to generate 3-5x more qualified leads while cutting costs. Real strategies, real results, real ROI.
+          </p>
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <Link href="/blog/ai-lead-generation-las-vegas-businesses" className="group rounded-xl bg-white dark:bg-gray-800 border-2 border-emerald-300 dark:border-emerald-700 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-200 p-6 flex flex-col cursor-pointer">
+              <div className="flex items-center gap-2 mb-2">
+                <span className="text-2xl">🎯</span>
+                <span className="text-base font-bold text-emerald-700 dark:text-emerald-400 group-hover:text-emerald-600 dark:group-hover:text-emerald-300 transition">AI Lead Gen: Las Vegas</span>
+              </div>
+              <span className="text-sm text-gray-600 dark:text-gray-400 flex-1">Complete guide to AI automation for Vegas businesses. 3-5x more leads, automated sales pipeline.</span>
+              <span className="mt-3 text-emerald-600 dark:text-emerald-400 font-bold group-hover:underline">Read Guide →</span>
+            </Link>
+            <Link href="/blog/ai-lead-generation-henderson-nevada" className="group rounded-xl bg-white dark:bg-gray-800 border-2 border-emerald-300 dark:border-emerald-700 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-200 p-6 flex flex-col cursor-pointer">
+              <div className="flex items-center gap-2 mb-2">
+                <span className="text-2xl">🏘️</span>
+                <span className="text-base font-bold text-emerald-700 dark:text-emerald-400 group-hover:text-emerald-600 dark:group-hover:text-emerald-300 transition">AI Lead Gen: Henderson</span>
+              </div>
+              <span className="text-sm text-gray-600 dark:text-gray-400 flex-1">Henderson's premium market demands smart AI. Dominate Green Valley, Anthem, and local neighborhoods.</span>
+              <span className="mt-3 text-emerald-600 dark:text-emerald-400 font-bold group-hover:underline">Read Guide →</span>
+            </Link>
+            <Link href="/blog/ai-lead-generation-summerlin-businesses" className="group rounded-xl bg-white dark:bg-gray-800 border-2 border-emerald-300 dark:border-emerald-700 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-200 p-6 flex flex-col cursor-pointer">
+              <div className="flex items-center gap-2 mb-2">
+                <span className="text-2xl">💎</span>
+                <span className="text-base font-bold text-emerald-700 dark:text-emerald-400 group-hover:text-emerald-600 dark:group-hover:text-emerald-300 transition">AI Lead Gen: Summerlin</span>
+              </div>
+              <span className="text-sm text-gray-600 dark:text-gray-400 flex-1">Premium positioning for Summerlin's luxury market. AI strategies that attract high-value homeowners.</span>
+              <span className="mt-3 text-emerald-600 dark:text-emerald-400 font-bold group-hover:underline">Read Guide →</span>
+            </Link>
+            <Link href="/blog/ai-chatbot-lead-generation-las-vegas" className="group rounded-xl bg-white dark:bg-gray-800 border-2 border-emerald-300 dark:border-emerald-700 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-200 p-6 flex flex-col cursor-pointer">
+              <div className="flex items-center gap-2 mb-2">
+                <span className="text-2xl">💬</span>
+                <span className="text-base font-bold text-emerald-700 dark:text-emerald-400 group-hover:text-emerald-600 dark:group-hover:text-emerald-300 transition">AI Chatbot Deep-Dive</span>
+              </div>
+              <span className="text-sm text-gray-600 dark:text-gray-400 flex-1">Technical guide: How chatbots capture leads 24/7, qualify prospects, and book appointments automatically.</span>
+              <span className="mt-3 text-emerald-600 dark:text-emerald-400 font-bold group-hover:underline">Read Guide →</span>
+            </Link>
+            <Link href="/blog/ai-email-marketing-automation-las-vegas" className="group rounded-xl bg-white dark:bg-gray-800 border-2 border-emerald-300 dark:border-emerald-700 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-200 p-6 flex flex-col cursor-pointer">
+              <div className="flex items-center gap-2 mb-2">
+                <span className="text-2xl">📧</span>
+                <span className="text-base font-bold text-emerald-700 dark:text-emerald-400 group-hover:text-emerald-600 dark:group-hover:text-emerald-300 transition">AI Email Automation</span>
+              </div>
+              <span className="text-sm text-gray-600 dark:text-gray-400 flex-1">Nurture leads on autopilot with AI email sequences. Convert 30-50% more prospects into customers.</span>
+              <span className="mt-3 text-emerald-600 dark:text-emerald-400 font-bold group-hover:underline">Read Guide →</span>
+            </Link>
+            <Link href="/blog/ai-lead-generation-north-las-vegas" className="group rounded-xl bg-white dark:bg-gray-800 border-2 border-emerald-300 dark:border-emerald-700 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-200 p-6 flex flex-col cursor-pointer">
+              <div className="flex items-center gap-2 mb-2">
+                <span className="text-2xl">🚀</span>
+                <span className="text-base font-bold text-emerald-700 dark:text-emerald-400 group-hover:text-emerald-600 dark:group-hover:text-emerald-300 transition">AI Lead Gen: North LV</span>
+              </div>
+              <span className="text-sm text-gray-600 dark:text-gray-400 flex-1">NLV's boom requires smart lead capture. AI strategies for contractors, home services, and growing businesses.</span>
+              <span className="mt-3 text-emerald-600 dark:text-emerald-400 font-bold group-hover:underline">Read Guide →</span>
+            </Link>
+            <Link href="/blog/ai-lead-generation-paradise-strip-businesses" className="group rounded-xl bg-white dark:bg-gray-800 border-2 border-emerald-300 dark:border-emerald-700 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-200 p-6 flex flex-col cursor-pointer">
+              <div className="flex items-center gap-2 mb-2">
+                <span className="text-2xl">🎰</span>
+                <span className="text-base font-bold text-emerald-700 dark:text-emerald-400 group-hover:text-emerald-600 dark:group-hover:text-emerald-300 transition">AI Lead Gen: Paradise/Strip</span>
+              </div>
+              <span className="text-sm text-gray-600 dark:text-gray-400 flex-1">Hospitality and tourism AI focus. Handle high-volume leads from tourists and locals simultaneously.</span>
+              <span className="mt-3 text-emerald-600 dark:text-emerald-400 font-bold group-hover:underline">Read Guide →</span>
+            </Link>
+            <Link href="/blog/ai-lead-generation-spring-valley-businesses" className="group rounded-xl bg-white dark:bg-gray-800 border-2 border-emerald-300 dark:border-emerald-700 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-200 p-6 flex flex-col cursor-pointer">
+              <div className="flex items-center gap-2 mb-2">
+                <span className="text-2xl">🌏</span>
+                <span className="text-base font-bold text-emerald-700 dark:text-emerald-400 group-hover:text-emerald-600 dark:group-hover:text-emerald-300 transition">AI Lead Gen: Spring Valley</span>
+              </div>
+              <span className="text-sm text-gray-600 dark:text-gray-400 flex-1">Diverse market opportunities. AI messaging that adapts for Asian, Hispanic, and multicultural audiences.</span>
+              <span className="mt-3 text-emerald-600 dark:text-emerald-400 font-bold group-hover:underline">Read Guide →</span>
+            </Link>
+            <Link href="/blog/ai-lead-generation-enterprise-nevada" className="group rounded-xl bg-white dark:bg-gray-800 border-2 border-emerald-300 dark:border-emerald-700 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-200 p-6 flex flex-col cursor-pointer">
+              <div className="flex items-center gap-2 mb-2">
+                <span className="text-2xl">💼</span>
+                <span className="text-base font-bold text-emerald-700 dark:text-emerald-400 group-hover:text-emerald-600 dark:group-hover:text-emerald-300 transition">AI Lead Gen: Enterprise</span>
+              </div>
+              <span className="text-sm text-gray-600 dark:text-gray-400 flex-1">B2B and professional services focus. AI automation for agencies, consultants, and corporate clients.</span>
+              <span className="mt-3 text-emerald-600 dark:text-emerald-400 font-bold group-hover:underline">Read Guide →</span>
+            </Link>
+            <Link href="/blog/ai-lead-generation-green-valley-ranch" className="group rounded-xl bg-white dark:bg-gray-800 border-2 border-emerald-300 dark:border-emerald-700 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-200 p-6 flex flex-col cursor-pointer">
+              <div className="flex items-center gap-2 mb-2">
+                <span className="text-2xl">🏡</span>
+                <span className="text-base font-bold text-emerald-700 dark:text-emerald-400 group-hover:text-emerald-600 dark:group-hover:text-emerald-300 transition">AI Lead Gen: Green Valley Ranch</span>
+              </div>
+              <span className="text-sm text-gray-600 dark:text-gray-400 flex-1">GVR's premium residential market. White-glove AI service that attracts $50K-$150K luxury projects.</span>
+              <span className="mt-3 text-emerald-600 dark:text-emerald-400 font-bold group-hover:underline">Read Guide →</span>
+            </Link>
+          </div>
+          <div className="mt-8 p-6 bg-white/80 dark:bg-gray-800/80 rounded-xl border border-emerald-300 dark:border-emerald-700">
+            <p className="text-center text-lg font-semibold text-gray-800 dark:text-gray-200 mb-3">
+              💡 Want AI lead generation for YOUR business?
+            </p>
+            <p className="text-center text-gray-700 dark:text-gray-300">
+              <Link href="tel:+17027738839" className="font-bold text-emerald-600 dark:text-emerald-400 hover:underline text-xl">Call (702) 773-8839</Link>
+              {' '}or{' '}
+              <Link href="mailto:elias@eliasmusleh.com" className="font-bold text-emerald-600 dark:text-emerald-400 hover:underline">email me</Link>
+              {' '}for a free 30-minute consultation.
+            </p>
+          </div>
+        </div>
+        
         <h2 className="text-2xl font-bold mb-6 text-emerald-700 dark:text-emerald-400">Southern Nevada Area Business Guides</h2>
         <div className="grid gap-10 md:grid-cols-3 mb-12">
           {posts.length > 0 ? (

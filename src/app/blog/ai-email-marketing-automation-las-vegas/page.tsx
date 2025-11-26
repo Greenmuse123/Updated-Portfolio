@@ -3,6 +3,7 @@ import { createBlogMetadata } from '@/utils/blog-metadata';
 import BlogLayout from '@/components/blog/BlogLayout';
 import { SchemaBlogPost, BlogHeader, BlogSection, BlogParagraph, BlogList, BlogListItem } from '@/components/blog/BlogComponents';
 import Link from 'next/link';
+import RelatedArticles from '@/components/blog/RelatedArticles';
 
 export const metadata = createBlogMetadata({
   title: 'AI Email Marketing Automation Las Vegas: Nurture Leads on Autopilot',
@@ -129,6 +130,34 @@ export default function AIEmailMarketingAutomationVegas() {
           <BlogParagraph><strong>Investment:</strong> $2,000-$6,000 setup + $300-$800/month. Typical ROI: 8-20x in first year.</BlogParagraph>
           <BlogParagraph><strong>Call (702) 773-8839</strong> - Turn your dead leads into customers!</BlogParagraph>
         </BlogSection>
+        <RelatedArticles 
+          articles={[
+            {
+              title: "AI Chatbot Lead Generation",
+              url: "/blog/ai-chatbot-lead-generation-las-vegas",
+              description: "Combine chatbots + email automation for complete lead nurturing. Capture leads, then nurture them automatically.",
+              category: "Technical Guide"
+            },
+            {
+              title: "AI Lead Generation Las Vegas (Main Guide)",
+              url: "/blog/ai-lead-generation-las-vegas-businesses",
+              description: "Complete guide covering all AI lead generation strategies for Vegas businesses.",
+              category: "Complete Guide"
+            },
+            {
+              title: "AI Lead Generation Summerlin",
+              url: "/blog/ai-lead-generation-summerlin-businesses",
+              description: "Premium Summerlin businesses use sophisticated email sequences to nurture luxury clients.",
+              category: "Luxury Market"
+            },
+            {
+              title: "AI Lead Generation Enterprise Nevada",
+              url: "/blog/ai-lead-generation-enterprise-nevada",
+              description: "B2B email automation strategies for professional services and corporate clients.",
+              category: "B2B Market"
+            }
+          ]}
+        />
       </SchemaBlogPost>
     </BlogLayout>
   );
