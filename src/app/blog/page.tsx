@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { getAllBlogPosts } from '@/utils/blog-utils';
+import { BreadcrumbStructuredData, BlogPostingListStructuredData } from '@/components/StructuredData';
 
 export const metadata = {
   title: "Blog & Insights | Elias Musleh | Las Vegas & Henderson Web Developer",
@@ -39,16 +40,32 @@ export default async function BlogHome() {
   // Sort posts by datePublished in descending order (newest first)
   posts.sort((a, b) => new Date(b.datePublished).getTime() - new Date(a.datePublished).getTime());
 
+  // Structured data for blog listing
+  const blogPostsStructuredData = posts.slice(0, 20).map(post => ({
+    headline: post.title,
+    url: `https://eliasmusleh.com/blog/${post.slug}`,
+    datePublished: post.datePublished,
+    author: post.author || 'Elias Musleh',
+    description: post.description,
+    image: post.imageUrl || 'https://eliasmusleh.com/images/services-hero.svg'
+  }));
+
   return (
-    <main className="relative max-w-5xl mx-auto px-4 sm:px-8 py-20 bg-gradient-to-br from-emerald-50/80 via-white/90 to-emerald-100/70 dark:from-gray-900 dark:via-gray-950 dark:to-emerald-900/40 rounded-3xl shadow-2xl border border-emerald-100/70 dark:border-emerald-900/40 backdrop-blur-md overflow-hidden min-h-[70vh] mt-12 mb-24">
-      {/* Decorative blurred shapes for extra flair */}
-      <div className="absolute -top-24 -left-20 w-72 h-72 bg-emerald-200 dark:bg-emerald-800 rounded-full opacity-30 blur-3xl pointer-events-none z-0"></div>
-      <div className="absolute -bottom-16 -right-16 w-56 h-56 bg-emerald-400 dark:bg-emerald-600 rounded-full opacity-20 blur-2xl pointer-events-none z-0"></div>
-      <div className="relative z-10">
-        <h1 className="text-5xl font-extrabold mb-10 text-emerald-700 dark:text-emerald-400 tracking-tight drop-shadow-lg flex items-center gap-3">
-          <svg className="w-10 h-10 text-emerald-500 dark:text-emerald-400" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 21H5a2 2 0 01-2-2V7a2 2 0 012-2h4l2-2 2 2h4a2 2 0 012 2v12a2 2 0 01-2 2z" /></svg>
-          Elias Musleh Blog & Insights
-        </h1>
+    <>
+      <BreadcrumbStructuredData items={[
+        { name: 'Home', item: 'https://eliasmusleh.com' },
+        { name: 'Blog', item: 'https://eliasmusleh.com/blog' }
+      ]} />
+      <BlogPostingListStructuredData posts={blogPostsStructuredData} />
+      
+      <main className="relative max-w-5xl mx-auto px-4 sm:px-8 py-20 bg-gradient-to-br from-emerald-50/80 via-white/90 to-emerald-100/70 dark:from-gray-900 dark:via-gray-950 dark:to-emerald-900/40 rounded-3xl shadow-2xl border border-emerald-100/70 dark:border-emerald-900/40 backdrop-blur-md overflow-hidden min-h-[70vh] mt-12 mb-24">
+        {/* Decorative blurred shapes for extra flair */}
+        <div className="absolute -top-24 -left-20 w-72 h-72 bg-emerald-200 dark:bg-emerald-800 rounded-full opacity-30 blur-3xl pointer-events-none z-0"></div>
+        <div className="absolute -bottom-16 -right-16 w-56 h-56 bg-emerald-400 dark:bg-emerald-600 rounded-full opacity-20 blur-2xl pointer-events-none z-0"></div>
+        <div className="relative z-10">
+          <h1 className="text-5xl font-extrabold mb-10 text-emerald-700 dark:text-emerald-400 tracking-tight drop-shadow-lg">
+            Elias Musleh Blog & Insights
+          </h1>
         <p className="mb-14 text-2xl text-gray-700 dark:text-gray-300 font-medium max-w-3xl">Industry insights, web development tips, game development resources, and tech strategies for startups and businesses in Las Vegas, Henderson, and throughout Nevada.</p>
         <h2 className="text-2xl font-bold mb-6 text-emerald-700 dark:text-emerald-400">Southern Nevada Area Business Guides</h2>
         <div className="grid gap-10 md:grid-cols-3 mb-12">
@@ -398,5 +415,6 @@ export default async function BlogHome() {
         </div>
       </div>
     </main>
+    </>
   );
 }

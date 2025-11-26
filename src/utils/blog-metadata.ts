@@ -27,24 +27,31 @@ export const createBlogMetadata = ({
     ? title 
     : `${title} | Elias Musleh`;
   
-  // Create canonical URL
-  const canonicalUrl = `https://eliasmusleh.com${slug ? `/${slug}` : ''}`;
+  // Create canonical URL with /blog/ prefix for blog posts
+  const canonicalUrl = slug.startsWith('blog/') 
+    ? `https://eliasmusleh.com/${slug}`
+    : `https://eliasmusleh.com/blog/${slug}`;
   
-  // Ensure image URL is absolute
+  // Ensure image URL is absolute - fallback to default OG image if not provided
   const absoluteImageUrl = imageUrl.startsWith('http') 
     ? imageUrl 
-    : `https://eliasmusleh.com${imageUrl}`;
+    : imageUrl
+    ? `https://eliasmusleh.com${imageUrl}`
+    : 'https://eliasmusleh.com/images/services-hero.svg';
 
   return {
     title: fullTitle,
     description,
     keywords: keywords.join(', '),
+    metadataBase: new URL('https://eliasmusleh.com'),
     openGraph: {
       title: title, // Keep OG title slightly shorter, without site name
       description,
       url: canonicalUrl,
+      siteName: 'Elias Musleh | Full Stack Developer',
       type: 'article',
       publishedTime: publishedDate,
+      locale: 'en_US',
       images: [
         {
           url: absoluteImageUrl,
@@ -56,12 +63,16 @@ export const createBlogMetadata = ({
     },
     twitter: {
       card: 'summary_large_image',
+      site: '@eliasmusleh',
+      creator: '@eliasmusleh',
       title: title,
       description,
       images: [absoluteImageUrl]
     },
     alternates: {
       canonical: canonicalUrl
-    }
+    },
+    authors: [{ name: 'Elias Musleh' }],
+    category: 'Technology'
   };
 }

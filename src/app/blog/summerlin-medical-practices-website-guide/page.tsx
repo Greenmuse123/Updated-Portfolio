@@ -4,9 +4,9 @@ import { ContactLink } from '@/components/blog/ContactLink';
 import { createBlogMetadata } from '@/utils/blog-metadata';
 
 export const metadata = {
-  title: 'Website Guide for Summerlin Medical Practices | GreenMuse',
+  title: 'Website Guide for Summerlin Medical Practices | Elias Musleh',
   description: 'A comprehensive guide to building effective websites for Summerlin medical practices with design, SEO, and tech tips.',
-  keywords: 'Summerlin medical websites, healthcare web design, medical practice SEO, patient portals Summerlin, GreenMuse',
+  keywords: 'Summerlin medical websites, healthcare web design, medical practice SEO, patient portals Summerlin, Las Vegas medical web design',
   alternates: {
     canonical: 'https://eliasmusleh.com/blog/summerlin-medical-practices-website-guide',
   },
@@ -14,10 +14,10 @@ export const metadata = {
     title: 'Website Guide for Summerlin Medical Practices',
     description: 'Learn how to build a patient-friendly website for your Summerlin, NV medical practice with design tips and SEO strategies.',
     url: 'https://eliasmusleh.com/blog/summerlin-medical-practices-website-guide',
-    siteName: 'GreenMuse',
+    siteName: 'Elias Musleh | Full Stack Developer',
     images: [
       {
-        url: 'https://eliasmusleh.com/images/summerlin-medical-website.jpg',
+        url: 'https://eliasmusleh.com/images/services-hero.svg',
         width: 1200,
         height: 630,
         alt: 'Summerlin medical practice website',
@@ -25,14 +25,14 @@ export const metadata = {
     ],
     locale: 'en_US',
     type: 'article',
-    authors: ['GreenMuse'],
   },
   twitter: {
     card: 'summary_large_image',
+    site: '@eliasmusleh',
+    creator: '@eliasmusleh',
     title: 'Website Guide for Summerlin Medical Practices',
     description: 'Learn how to build a patient-friendly website for your Summerlin, NV medical practice with design tips and SEO strategies.',
-    images: ['https://greenmuse.dev/images/summerlin-medical-website.jpg'],
-    site: '@GreenMuseDev',
+    images: ['https://eliasmusleh.com/images/services-hero.svg'],
   },
 };
 
