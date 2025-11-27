@@ -1,4 +1,5 @@
 import { ContactLink } from '@/components/blog/ContactLink';
+import RelatedArticles from '@/components/blog/RelatedArticles';
 import { Metadata } from 'next';
 import { createBlogMetadata } from '@/utils/blog-metadata';
 import BlogLayout from '@/components/blog/BlogLayout';
@@ -213,6 +214,34 @@ export default function ArticleLasVegasEntrepreneursWebsiteConversion() {
             <a href="/#contact" className="inline-block px-7 py-3 rounded-full bg-black dark:bg-white text-white dark:text-black font-semibold shadow-md hover:bg-neutral-800 dark:hover:bg-neutral-200 hover:scale-105 transition text-lg">Get a Free Conversion Audit</a>
           </div>
         </BlogSection>
+        <RelatedArticles 
+          articles={[
+            {
+              title: "AI Lead Generation Las Vegas",
+              url: "/blog/ai-lead-generation-las-vegas-businesses",
+              description: "Boost website conversions with AI automation. Capture and convert visitors 24/7.",
+              category: "AI Marketing"
+            },
+            {
+              title: "Building Scalable Business Website Las Vegas",
+              url: "/blog/building-scalable-business-website-las-vegas",
+              description: "Build conversion-optimized websites that grow with your Vegas business.",
+              category: "Web Development"
+            },
+            {
+              title: "Top 5 Website Mistakes Vegas Startups",
+              url: "/blog/top-5-mistakes-las-vegas-startups-website",
+              description: "Avoid costly conversion killers. Fix what's stopping Vegas startups from converting.",
+              category: "Best Practices"
+            },
+            {
+              title: "Las Vegas Digital Marketing Strategies",
+              url: "/blog/las-vegas-digital-marketing-strategies",
+              description: "Complete digital marketing guide for Vegas businesses. SEO, PPC, and social media.",
+              category: "Marketing"
+            }
+          ]}
+        />
       </SchemaBlogPost>
     </BlogLayout>
   );

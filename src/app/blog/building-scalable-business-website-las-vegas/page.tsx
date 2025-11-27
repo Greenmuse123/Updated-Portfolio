@@ -64,6 +64,7 @@ export const metadata = {
 
 import BlogLayout from '@/components/blog/BlogLayout';
 import { ContactLink } from '@/components/blog/ContactLink';
+import RelatedArticles from '@/components/blog/RelatedArticles';
 import { BlogHeader, BlogSection, BlogSubsection, BlogParagraph, BlogList, BlogListItem } from '@/components/blog/BlogComponents';
 
 export default function ArticleScalableBusinessWebsiteLasVegas() {
@@ -165,6 +166,34 @@ export default function ArticleScalableBusinessWebsiteLasVegas() {
         <footer className="mt-10 text-center">
           <a href="/#contact" className="inline-block px-7 py-3 rounded-full bg-black dark:bg-white text-white dark:text-black font-semibold shadow-md hover:bg-neutral-800 dark:hover:bg-neutral-200 hover:scale-105 transition text-lg">Contact Elias Musleh</a>
         </footer>
+        <RelatedArticles 
+          articles={[
+            {
+              title: "Cost of Hiring Web Developer Las Vegas",
+              url: "/blog/cost-hiring-web-developer-las-vegas",
+              description: "Budget for scalable development. What Vegas businesses pay for quality.",
+              category: "Pricing"
+            },
+            {
+              title: "Choosing Web Developer Nevada",
+              url: "/blog/choosing-web-developer-nevada",
+              description: "Find developers who understand scalability and long-term growth.",
+              category: "Hiring Guide"
+            },
+            {
+              title: "Top 10 Vegas Businesses Crushing Websites 2025",
+              url: "/blog/top-10-las-vegas-businesses-crushing-websites-2025",
+              description: "See examples of highly scalable Vegas business websites.",
+              category: "Inspiration"
+            },
+            {
+              title: "AI Lead Generation Las Vegas",
+              url: "/blog/ai-lead-generation-las-vegas-businesses",
+              description: "Scale your lead generation with AI. Grow from 10 to 1000 leads/month.",
+              category: "Growth Strategy"
+            }
+          ]}
+        />
       </article>
     </BlogLayout>
   );

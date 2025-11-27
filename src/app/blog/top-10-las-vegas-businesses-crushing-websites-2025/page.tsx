@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import BlogLayout from '@/components/blog/BlogLayout';
 import { ContactLink } from '@/components/blog/ContactLink';
+import RelatedArticles from '@/components/blog/RelatedArticles';
 import { BlogHeader, TableOfContents, BlogSection, BlogSubsection, BlogParagraph, BlogList, BlogListItem, SchemaBlogPost } from '@/components/blog/BlogComponents';
 
 export const metadata: Metadata = {
@@ -350,6 +351,34 @@ export default function ArticleTop10LasVegasBusinessesCrushingWebsites2025() {
             </a>
           </div>
         </BlogSection>
+        <RelatedArticles 
+          articles={[
+            {
+              title: "Building Scalable Business Website Las Vegas",
+              url: "/blog/building-scalable-business-website-las-vegas",
+              description: "Learn from the best. Build websites like these top Vegas businesses.",
+              category: "Web Development"
+            },
+            {
+              title: "Las Vegas Entrepreneurs Website Conversion",
+              url: "/blog/las-vegas-entrepreneurs-website-conversion",
+              description: "Conversion optimization strategies used by successful Vegas entrepreneurs.",
+              category: "Conversion"
+            },
+            {
+              title: "Choosing Web Developer Nevada",
+              url: "/blog/choosing-web-developer-nevada",
+              description: "Hire developers who build award-winning sites like these examples.",
+              category: "Hiring Guide"
+            },
+            {
+              title: "AI Lead Generation Las Vegas",
+              url: "/blog/ai-lead-generation-las-vegas-businesses",
+              description: "Add AI to your great website. Generate leads automatically like top businesses.",
+              category: "AI Marketing"
+            }
+          ]}
+        />
       </SchemaBlogPost>
     </BlogLayout>
   );

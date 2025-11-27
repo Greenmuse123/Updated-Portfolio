@@ -9,6 +9,7 @@ import { SchemaBlogPost,
   BlogListItem,
   TableOfContents} from '@/components/blog/BlogComponents';
 import { ContactLink } from '@/components/blog/ContactLink';
+import RelatedArticles from '@/components/blog/RelatedArticles';
 
 export const metadata: Metadata = createBlogMetadata({
   title: 'Custom Software Development Nevada | Business Process Automation',
@@ -315,6 +316,34 @@ export default function CustomSoftwareDevelopment() {
             </BlogParagraph>
           </BlogSubsection>
         </BlogSection>
+        <RelatedArticles 
+          articles={[
+            {
+              title: "Custom CRM 2025 Vegas",
+              url: "/blog/custom-crm-2025-vegas",
+              description: "Custom CRM development for Vegas businesses. One type of custom software solution.",
+              category: "CRM Development"
+            },
+            {
+              title: "Building Scalable Business Website Las Vegas",
+              url: "/blog/building-scalable-business-website-las-vegas",
+              description: "Scalable custom web applications for growing Vegas businesses.",
+              category: "Web Development"
+            },
+            {
+              title: "Choosing Web Developer Nevada",
+              url: "/blog/choosing-web-developer-nevada",
+              description: "Find developers capable of custom software development, not just templates.",
+              category: "Hiring Guide"
+            },
+            {
+              title: "AI Lead Generation Las Vegas",
+              url: "/blog/ai-lead-generation-las-vegas-businesses",
+              description: "Custom AI solutions for lead generation and sales automation.",
+              category: "AI Development"
+            }
+          ]}
+        />
       </SchemaBlogPost>
     </BlogLayout>
   );

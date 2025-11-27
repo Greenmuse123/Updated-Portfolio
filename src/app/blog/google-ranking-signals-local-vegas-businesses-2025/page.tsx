@@ -1,5 +1,6 @@
 import BlogLayout from '@/components/blog/BlogLayout';
 import { ContactLink } from '@/components/blog/ContactLink';
+import RelatedArticles from '@/components/blog/RelatedArticles';
 import { BlogHeader, TableOfContents, BlogSection, BlogSubsection, BlogParagraph, BlogList, BlogListItem, SchemaBlogPost } from '@/components/blog/BlogComponents';
 import { Metadata } from 'next';
 import { createBlogMetadata } from '@/utils/blog-metadata';
@@ -471,6 +472,34 @@ export default function ArticleGoogleRankingSignalsVegas2025() {
             Remember, SEO is a marathon, not a sprint. Consistent effort and adaptation to Google's evolving requirements will position your Las Vegas business for long-term success in search results.
           </BlogParagraph>
         </BlogSection>
+        <RelatedArticles 
+          articles={[
+            {
+              title: "Why Local SEO Matters Vegas",
+              url: "/blog/why-local-seo-matters-vegas",
+              description: "Apply these ranking signals to Vegas local SEO. Dominate Google Maps results.",
+              category: "Local SEO"
+            },
+            {
+              title: "Las Vegas Digital Marketing Strategies",
+              url: "/blog/las-vegas-digital-marketing-strategies",
+              description: "Complete marketing guide incorporating Google's latest ranking factors.",
+              category: "Marketing"
+            },
+            {
+              title: "AI Lead Generation Las Vegas",
+              url: "/blog/ai-lead-generation-las-vegas-businesses",
+              description: "Complement SEO with AI automation. Capture and convert organic traffic automatically.",
+              category: "AI Marketing"
+            },
+            {
+              title: "Local SEO Checklist Vegas Restaurants",
+              url: "/blog/local-seo-checklist-las-vegas-restaurants",
+              description: "Step-by-step local SEO implementation for Vegas food businesses.",
+              category: "Implementation Guide"
+            }
+          ]}
+        />
       </SchemaBlogPost>
     </BlogLayout>
   );

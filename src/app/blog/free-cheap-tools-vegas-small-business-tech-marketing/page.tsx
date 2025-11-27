@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import BlogLayout from '@/components/blog/BlogLayout';
 import { ContactLink } from '@/components/blog/ContactLink';
+import RelatedArticles from '@/components/blog/RelatedArticles';
 import { BlogHeader, BlogSection, BlogSubsection, BlogParagraph, BlogList, BlogListItem, SchemaBlogPost, TableOfContents } from '@/components/blog/BlogComponents';
 
 export const metadata: Metadata = {
@@ -487,6 +488,34 @@ export default function ArticleFreeToolsVegasSmallBusiness() {
             </a>
           </div>
         </BlogSection>
+        <RelatedArticles 
+          articles={[
+            {
+              title: "AI Lead Generation Las Vegas",
+              url: "/blog/ai-lead-generation-las-vegas-businesses",
+              description: "Upgrade to AI automation for serious lead generation. 3-5x more qualified leads.",
+              category: "AI Marketing"
+            },
+            {
+              title: "Henderson Small Business Tech Solutions",
+              url: "/blog/henderson-small-business-tech-solutions",
+              description: "Complete tech stack for Henderson businesses beyond free tools.",
+              category: "Business Tech"
+            },
+            {
+              title: "Las Vegas Digital Marketing Strategies",
+              url: "/blog/las-vegas-digital-marketing-strategies",
+              description: "Combine free tools with professional marketing strategies for maximum ROI.",
+              category: "Marketing"
+            },
+            {
+              title: "Custom CRM 2025 Vegas",
+              url: "/blog/custom-crm-2025-vegas",
+              description: "When free tools aren't enough - custom CRM solutions for growing businesses.",
+              category: "Business Software"
+            }
+          ]}
+        />
       </SchemaBlogPost>
     </BlogLayout>
   );

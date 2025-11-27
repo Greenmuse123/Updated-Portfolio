@@ -63,6 +63,7 @@ export const metadata = {
 
 import BlogLayout from '@/components/blog/BlogLayout';
 import { ContactLink } from '@/components/blog/ContactLink';
+import RelatedArticles from '@/components/blog/RelatedArticles';
 import { BlogHeader, BlogSection, BlogSubsection, BlogParagraph, BlogList, BlogListItem } from '@/components/blog/BlogComponents';
 
 export default function ArticleCustomCRM2025Vegas() {
@@ -166,6 +167,34 @@ export default function ArticleCustomCRM2025Vegas() {
         <footer className="mt-10 text-center">
           <a href="/#contact" className="inline-block px-7 py-3 rounded-full bg-black dark:bg-white text-white dark:text-black font-semibold shadow-md hover:bg-neutral-800 dark:hover:bg-neutral-200 hover:scale-105 transition text-lg">Contact Elias Musleh</a>
         </footer>
+        <RelatedArticles 
+          articles={[
+            {
+              title: "AI Lead Generation Las Vegas",
+              url: "/blog/ai-lead-generation-las-vegas-businesses",
+              description: "Connect your CRM to AI lead generation. Automate the entire sales pipeline.",
+              category: "AI Integration"
+            },
+            {
+              title: "Custom Software Development Nevada",
+              url: "/blog/custom-software-development-nevada-business",
+              description: "Build custom business software beyond CRM. Tailored solutions for Vegas businesses.",
+              category: "Custom Development"
+            },
+            {
+              title: "Henderson Small Business Tech Solutions",
+              url: "/blog/henderson-small-business-tech-solutions",
+              description: "Complete tech stack including CRM for Henderson businesses.",
+              category: "Business Tech"
+            },
+            {
+              title: "Website CRM Solutions Henderson Service Businesses",
+              url: "/blog/website-crm-solutions-henderson-service-businesses",
+              description: "CRM for Henderson service businesses. Integration and automation strategies.",
+              category: "Service Business CRM"
+            }
+          ]}
+        />
       </article>
     </BlogLayout>
   );

@@ -1,4 +1,5 @@
 import { ContactLink } from '@/components/blog/ContactLink';
+import RelatedArticles from '@/components/blog/RelatedArticles';
 import { Metadata } from 'next';
 import { createBlogMetadata } from '@/utils/blog-metadata';
 import BlogLayout from '@/components/blog/BlogLayout';
@@ -531,6 +532,34 @@ export default function VegasDigitalMarketingStrategies() {
           
           <CTASection />
         </BlogSection>
+        <RelatedArticles 
+          articles={[
+            {
+              title: "AI Lead Generation Las Vegas",
+              url: "/blog/ai-lead-generation-las-vegas-businesses",
+              description: "Automate your Vegas marketing. AI generates and qualifies leads while you sleep.",
+              category: "AI Marketing"
+            },
+            {
+              title: "Why Local SEO Matters Vegas",
+              url: "/blog/why-local-seo-matters-vegas",
+              description: "Master local SEO for Vegas businesses. Dominate Google Maps and local search.",
+              category: "Local SEO"
+            },
+            {
+              title: "Henderson Digital Marketing Strategies",
+              url: "/blog/henderson-digital-marketing-strategies",
+              description: "Henderson-specific marketing tactics. Similar strategies, different local market.",
+              category: "Local Marketing"
+            },
+            {
+              title: "Google Ranking Signals Vegas 2025",
+              url: "/blog/google-ranking-signals-local-vegas-businesses-2025",
+              description: "Latest Google updates affecting Vegas businesses. Stay ahead of algorithm changes.",
+              category: "SEO Updates"
+            }
+          ]}
+        />
       </SchemaBlogPost>
     </BlogLayout>
   );

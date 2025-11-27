@@ -9,6 +9,7 @@ import { SchemaBlogPost,
   BlogListItem,
   TableOfContents} from '@/components/blog/BlogComponents';
 import { ContactLink } from '@/components/blog/ContactLink';
+import RelatedArticles from '@/components/blog/RelatedArticles';
 
 export const metadata: Metadata = createBlogMetadata({
   title: 'Top 5 Mistakes Las Vegas Startups Make on Their First Website',
@@ -188,6 +189,34 @@ export default function Top5MistakesVegasStartups() {
             Is your startup website underperforming? <ContactLink>Contact me</ContactLink> for a free audit and strategy to fix critical issues and drive results.
           </BlogParagraph>
         </BlogSection>
+        <RelatedArticles 
+          articles={[
+            {
+              title: "Building Scalable Business Website Las Vegas",
+              url: "/blog/building-scalable-business-website-las-vegas",
+              description: "Do it right from the start. Build websites that avoid these common mistakes.",
+              category: "Best Practices"
+            },
+            {
+              title: "Choosing Web Developer Nevada",
+              url: "/blog/choosing-web-developer-nevada",
+              description: "Hire developers who won't make these startup-killing mistakes.",
+              category: "Hiring Guide"
+            },
+            {
+              title: "Las Vegas Entrepreneurs Website Conversion",
+              url: "/blog/las-vegas-entrepreneurs-website-conversion",
+              description: "Fix mistakes and optimize for conversions. Turn visitors into customers.",
+              category: "Conversion"
+            },
+            {
+              title: "Las Vegas Startup Technology Ecosystem",
+              url: "/blog/las-vegas-startup-technology-ecosystem",
+              description: "Navigate the Vegas startup ecosystem. Resources and connections for founders.",
+              category: "Startup Resources"
+            }
+          ]}
+        />
       </SchemaBlogPost>
     </BlogLayout>
   );

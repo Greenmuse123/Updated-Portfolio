@@ -9,6 +9,7 @@ import { SchemaBlogPost,
   BlogListItem,
   TableOfContents} from '@/components/blog/BlogComponents';
 import { ContactLink } from '@/components/blog/ContactLink';
+import RelatedArticles from '@/components/blog/RelatedArticles';
 
 export const metadata: Metadata = createBlogMetadata({
   title: 'Local SEO Checklist for Las Vegas Restaurants',
@@ -175,6 +176,34 @@ export default function LocalSeoChecklistRestaurants() {
             Need help getting your Las Vegas restaurant discovered online? <ContactLink>Contact me</ContactLink> for a tailored local SEO strategy that drives reservations.
           </BlogParagraph>
         </BlogSection>
+        <RelatedArticles 
+          articles={[
+            {
+              title: "AI Chatbots for Restaurants Las Vegas",
+              url: "/blog/ai-chatbots-restaurants-salons-auto-shops-las-vegas",
+              description: "Handle reservations 24/7 with AI chatbots. Perfect complement to local SEO.",
+              category: "AI Automation"
+            },
+            {
+              title: "Restaurant Hospitality Tech Guide Nevada",
+              url: "/blog/restaurant-hospitality-tech-guide-nevada",
+              description: "Complete tech stack for Vegas restaurants. POS, ordering, and marketing systems.",
+              category: "Restaurant Tech"
+            },
+            {
+              title: "Best Tech Solutions Restaurants Henderson",
+              url: "/blog/best-tech-solutions-restaurants-bars-henderson",
+              description: "Henderson restaurant technology recommendations and implementation strategies.",
+              category: "Local Restaurant Tech"
+            },
+            {
+              title: "Why Local SEO Matters Vegas",
+              url: "/blog/why-local-seo-matters-vegas",
+              description: "Foundation of local SEO for all Vegas businesses, including restaurants.",
+              category: "Local SEO Basics"
+            }
+          ]}
+        />
       </SchemaBlogPost>
     </BlogLayout>
   );
